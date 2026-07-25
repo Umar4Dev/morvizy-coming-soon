@@ -2,241 +2,454 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- ============ SEO ============ -->
-    <title>MORVIZY — Crafted for Those Who Notice the Difference</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORVIZY — Premium Eyewear, Crafted for Modern Lifestyles</title>
     <meta name="description"
-        content="MORVIZY is a global house of refined design, built on precision, heritage and quiet innovation. Discover our vision and connect with us." />
-    <meta name="keywords" content="Morvizy, luxury brand, minimalist design, premium house, global brand" />
-    <meta name="author" content="Rixogen Industries Private Limited" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.morvizy.com/" />
+        content="MORVIZY is a premium eyewear house crafting polarized, UV400 sunglasses with premium frames. New collection coming soon.">
+    <meta name="theme-color" content="#F7F5F2">
 
-    <!-- ============ Open Graph / Social Preview ============ -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="MORVIZY — Crafted for Those Who Notice the Difference" />
-    <meta property="og:description"
-        content="A global house of refined design, built on precision, heritage and quiet innovation." />
-    <meta property="og:url" content="https://www.morvizy.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="MORVIZY" />
-    <meta name="twitter:description" content="Crafted for those who notice the difference." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="MORVIZY — See Beyond Style">
+    <meta property="og:description" content="Premium sunglasses crafted for modern lifestyles.">
+    <meta property="og:type" content="website">
 
-    <!-- ============ Favicon (inline, no external asset dependency) ============ -->
-    <link rel="icon"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2308080a'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23b7bcc3' font-family='Georgia,serif'%3EM%3C/text%3E%3C/svg%3E" />
-
-    <!-- ============ Fonts ============ -->
-    <!-- Cormorant Garamond: display serif for luxury headline tone -->
-    <!-- Jost: geometric sans for body copy and UI labels -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap"
-        rel="stylesheet" />
-
-    <link rel="stylesheet" href="style.css" />
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="#" class="logo" aria-label="MORVIZY Home">
+                    <img src="/assets/MRlogo.png" alt="MORVIZY">
+                    <span class="logo-text">MORVIZY</span>
+                </a>
 
-
-    <header class="navbar" id="navbar">
-        <nav class="navbar__inner" aria-label="Primary">
-            <a href="#hero" class="navbar__logo" aria-label="MORVIZY — back to top">MORVIZY</a>
-
-            <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu"
-                aria-label="Open menu">
-                <span></span><span></span><span></span>
-            </button>
-
-            <div class="navbar__menu" id="navMenu">
-                <ul class="navbar__links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#vision">Vision</a></li>
-                    <li><a href="#connect">Contact</a></li>
+                <!-- Navigation -->
+                <ul class="nav-menu">
+                    <li><a href="#discover" class="nav-link active">Discover</a></li>
+                    <li><a href="#eyewear" class="nav-link">Eyewear</a></li>
+                    <li><a href="#journal" class="nav-link">Journal</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
                 </ul>
 
-                <ul class="navbar__socials" aria-label="Social media">
-                    <li>
-                        <a href="https://www.instagram.com/morvizy" target="_blank" rel="noopener noreferrer"
-                            aria-label="MORVIZY on Instagram">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <rect x="3" y="3" width="18" height="18" rx="5" />
-                                <circle cx="12" cy="12" r="4" />
-                                <circle cx="17.2" cy="6.8" r="1" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                            aria-label="MORVIZY on LinkedIn">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <rect x="3" y="3" width="18" height="18" rx="2" />
-                                <line x1="7.5" y1="9.5" x2="7.5" y2="17" />
-                                <circle cx="7.5" cy="6.7" r="1" />
-                                <path d="M11.5 17v-4.3c0-1.7 1-2.6 2.4-2.6s2.1 1 2.1 2.6V17" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="MORVIZY on X">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M4 4l16 16M20 4L4 20" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <!-- Auth Buttons -->
+                <div class="nav-actions">
+                    <a href="#" class="nav-login" id="loginBtn">Log In</a>
+                    <a href="#" class="btn-signup" id="signupBtn">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M8 3.5C6.067 3.5 4.5 5.067 4.5 7C4.5 8.933 6.067 10.5 8 10.5C9.933 10.5 11.5 8.933 11.5 7C11.5 5.067 9.933 3.5 8 3.5Z"
+                                stroke="currentColor" stroke-width="1.2" />
+                            <path d="M3 13C3 11.343 5.134 10 8 10C10.866 10 13 11.343 13 13" stroke="currentColor"
+                                stroke-width="1.2" stroke-linecap="round" />
+                        </svg>
+                        Sign Up
+                    </a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="mobile-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <main id="main-content">
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <!-- Collection Badge -->
+                    <div class="collection-badge">
+                        <span class="badge-line"></span>
+                        <span class="badge-text">NEW COLLECTION - COMING SOON</span>
+                    </div>
 
+                    <!-- Main Heading -->
+                    <h1 class="hero-heading">
+                        <span class="heading-line">SEE</span>
+                        <span class="heading-line">BEYOND</span>
+                        <span class="heading-line heading-accent">STYLE</span>
+                    </h1>
 
-        <section class="hero" id="hero">
-            <p class="hero__ghost" aria-hidden="true">MORVIZY</p>
+                    <!-- Description -->
+                    <p class="hero-description">
+                        Premium sunglasses crafted for<br>modern lifestyles.
+                    </p>
 
-            <div class="hero__content fade-in">
-                <p class="eyebrow">Est. Global — Design House</p>
-                <h1 class="hero__headline">Crafted for those<br />who notice the difference.</h1>
-                <p class="hero__desc">
-                    MORVIZY is a house of quiet luxury — where precision, restraint and
-                    material honesty come together to build objects and experiences
-                    that outlast trend.
-                </p>
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons">
+                        <a href="#collection" class="btn btn-primary">
+                            Explore Collection
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </a>
+                        <a href="#story" class="btn btn-secondary">
+                            Our Story
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </a>
+                    </div>
 
-                <div class="hero__ctas">
-                    <a href="#vision" class="btn btn--primary">Explore Our Vision</a>
-                    <a href="#connect" class="btn btn--ghost">Get in Touch</a>
+                    <!-- Feature Numbers -->
+                    <ul class="hero-numbers">
+                        <li>01</li>
+                        <li>02</li>
+                        <li>03</li>
+                    </ul>
+                </div>
+
+                <!-- Right Image -->
+                <div class="hero-visual">
+                    <!-- Background Circles -->
+                    <div class="bg-circle circle-1"></div>
+                    <div class="bg-circle circle-2"></div>
+
+                    <!-- Main Image -->
+                    <div class="hero-image-wrapper">
+                        <img src="/hero.avif" alt="Man wearing premium black sunglasses" class="hero-image">
+                    </div>
+
+                    <!-- Floating Card -->
+                    <div class="floating-card">
+                        <div class="floating-card-logo">
+                            <img src="./assets/MRlogo.png" alt="MR">
+                        </div>
+                        <div class="floating-card-divider"></div>
+                        <div class="floating-card-content">
+                            <h3>Premium<br>Eyewear</h3>
+                            <p>Launching Soon</p>
+                        </div>
+                        <button class="floating-card-scroll" aria-label="Scroll">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 3V17M10 17L4 11M10 17L16 11" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FEATURES SECTION ============ -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2" />
+                            <path d="M24 12V24L30 30" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">POLARIZED</h3>
+                    <p class="feature-text">Clear vision,<br>every time.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8L28 16H36L30 22L32 30L24 26L16 30L18 22L12 16H20L24 8Z" stroke="currentColor"
+                                stroke-width="2" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">UV400</h3>
+                    <p class="feature-text">Maximum protection<br>for your eyes.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M12 24L20 16L28 24L36 16" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <rect x="8" y="12" width="32" height="24" rx="4" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">HANDCRAFTED</h3>
+                    <p class="feature-text">Precision crafted<br>with care.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 12C18 12 13 17 13 23C13 29 24 38 24 38C24 38 35 29 35 23C35 17 30 12 24 12Z"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">LIGHTWEIGHT</h3>
+                    <p class="feature-text">Comfort you can<br>wear all day.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="10" y="14" width="28" height="20" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M10 22H38" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">PREMIUM QUALITY</h3>
+                    <p class="feature-text">Built to last.<br>Made to impress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PRODUCT SHOWCASE ============ -->
+    <section class="product-showcase">
+        <div class="container">
+            <div class="showcase-grid">
+                <!-- Image -->
+                <div class="showcase-image">
+                    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&h=600&fit=crop"
+                        alt="MORVIZY Premium Sunglasses">
+                </div>
+
+                <!-- Content -->
+                <div class="showcase-content">
+                    <span class="showcase-eyebrow">CRAFTED FOR VISION</span>
+                    <h2 class="showcase-heading">
+                        More Than<br>Sunglasses
+                    </h2>
+                    <p class="showcase-text">
+                        At MORVIZY, we believe style is more than what you wear—it's how you see the world. Every frame
+                        is a blend of innovation, design, and timeless elegance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <rect x="6" y="10" width="36" height="28" rx="2" stroke="currentColor" stroke-width="2" />
+                        <path d="M6 14L24 26L42 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="newsletter-text">
+                    <h3>Be the first to know</h3>
+                    <p>Exclusive launches. Early access. Special offers.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" aria-label="Email address">
+                    <button type="submit" class="btn-subscribe">
+                        Subscribe
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="/assets/MRlogo.png" alt="MORVIZY">
+                        <span>MORVIZY</span>
+                    </div>
+                    <p class="footer-tagline">Premium Eyewear<br>Designed for modern living.</p>
+                </div>
+
+                <!-- Shop Links -->
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#eyewear">All Eyewear</a></li>
+                        <li><a href="#new">New Arrivals</a></li>
+                        <li><a href="#best">Best Sellers</a></li>
+                        <li><a href="#coming">Coming Soon</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help Links -->
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#shipping">Shipping</a></li>
+                        <li><a href="#returns">Returns</a></li>
+                        <li><a href="#guide">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us -->
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#instagram" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor"
+                                    stroke-width="2" />
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#pinterest" aria-label="Pinterest">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 4C7.58 4 4 7.58 4 12C4 15.5 6.36 18.44 9.58 19.36C9.53 18.77 9.5 17.89 9.65 17.24L10.73 12.82C10.73 12.82 10.44 12.23 10.44 11.36C10.44 10 11.24 8.97 12.25 8.97C13.1 8.97 13.51 9.58 13.51 10.31C13.51 11.13 12.99 12.36 12.72 13.49C12.5 14.43 13.18 15.2 14.11 15.2C15.79 15.2 17.07 13.43 17.07 10.87C17.07 8.63 15.46 7.04 12.04 7.04C8.24 7.04 6 9.88 6 12.85C6 13.68 6.29 14.57 6.67 15.05C6.76 15.16 6.77 15.26 6.74 15.37L6.45 16.58C6.41 16.77 6.3 16.81 6.1 16.72C4.9 16.16 4.17 14.43 4.17 12.81C4.17 9.42 6.67 6.32 12.34 6.32C16.94 6.32 20.47 9.5 20.47 10.83C20.47 14.59 17.9 17.59 14.34 17.59C13.32 17.59 12.36 17.06 12.03 16.42L11.31 19.22C11.04 20.23 10.34 21.47 9.87 22.21C10.87 22.53 11.92 22.7 13 22.7C17.42 22.7 21 19.12 21 14.7C21 7.58 16.42 4 12 4Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#facebook" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#youtube" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M22.54 6.42C22.4212 5.94541 22.1793 5.51057 21.8387 5.15941C21.498 4.80824 21.0708 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.12 4 3.4 4.46C2.92925 4.59318 2.502 4.84824 2.16135 5.19941C1.8207 5.55057 1.57881 5.98541 1.46 6.46C1.14521 8.20556 0.991224 9.97631 1 11.75C0.988779 13.537 1.14277 15.3213 1.46 17.08C1.59096 17.5398 1.83831 17.9581 2.17695 18.2945C2.51559 18.6308 2.93699 18.8738 3.4 19C5.12 19.46 12 19.46 12 19.46C12 19.46 18.88 19.46 20.6 19C21.0708 18.8668 21.498 18.6118 21.8387 18.2606C22.1793 17.9094 22.4212 17.4746 22.54 17C22.8524 15.2676 23.0063 13.5103 23 11.75C23.0112 9.96295 22.8572 8.1787 22.54 6.42Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48V15.02Z" fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
-                <span class="hero__scroll-line"></span>
-            </a>
-        </section>
-
-
-        <section class="about" id="about">
-            <div class="about__inner fade-in">
-                <p class="eyebrow">About Morvizy</p>
-                <h2 class="section-heading">Restraint is a form of respect.</h2>
-                <p class="about__text">
-                    Every decision at MORVIZY begins with subtraction. We remove what
-                    is unnecessary until only what matters remains — a philosophy
-                    drawn from decades of craft, applied without compromise across
-                    everything we make. The result is a brand built not on noise,
-                    but on trust that endures.
-                </p>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 MORVIZY. All rights reserved.</p>
             </div>
-        </section>
-
-
-        <section class="vision" id="vision">
-            <div class="vision__header fade-in">
-                <p class="eyebrow">Our Vision</p>
-                <h2 class="section-heading">What guides everything we build.</h2>
-            </div>
-
-            <div class="vision__grid">
-                <article class="vision-card fade-in">
-                    <p class="vision-card__label">Precision</p>
-                    <h3 class="vision-card__title">Detail without excess</h3>
-                    <p class="vision-card__text">
-                        We obsess over the smallest tolerances so that the final
-                        experience feels effortless, considered and exact.
-                    </p>
-                </article>
-
-                <article class="vision-card fade-in">
-                    <p class="vision-card__label">Heritage</p>
-                    <h3 class="vision-card__title">Craft carried forward</h3>
-                    <p class="vision-card__text">
-                        Our methods are rooted in traditional craftsmanship, honoured
-                        and adapted for a modern, global audience.
-                    </p>
-                </article>
-
-                <article class="vision-card fade-in">
-                    <p class="vision-card__label">Innovation</p>
-                    <h3 class="vision-card__title">Quiet, deliberate progress</h3>
-                    <p class="vision-card__text">
-                        We evolve at our own pace — advancing only when it earns its
-                        place, never for the sake of change alone.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-
-        <section class="connect" id="connect">
-            <div class="connect__inner fade-in">
-                <p class="eyebrow">Stay Connected</p>
-                <h2 class="section-heading">Let's stay in touch.</h2>
-                <p class="connect__text">
-                    For partnerships, press or general enquiries, reach us directly.
-                </p>
-
-                <a class="connect__email" href="mailto:hello@morvizy.com">hello@morvizy.com</a>
-
-                <ul class="connect__socials" aria-label="Social media">
-                    <li>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                            aria-label="MORVIZY on Instagram">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <rect x="3" y="3" width="18" height="18" rx="5" />
-                                <circle cx="12" cy="12" r="4" />
-                                <circle cx="17.2" cy="6.8" r="1" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                            aria-label="MORVIZY on LinkedIn">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <rect x="3" y="3" width="18" height="18" rx="2" />
-                                <line x1="7.5" y1="9.5" x2="7.5" y2="17" />
-                                <circle cx="7.5" cy="6.7" r="1" />
-                                <path d="M11.5 17v-4.3c0-1.7 1-2.6 2.4-2.6s2.1 1 2.1 2.6V17" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="MORVIZY on X">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M4 4l16 16M20 4L4 20" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                            aria-label="MORVIZY on Facebook">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M14 8.5h2.5V5H14c-2.2 0-3.5 1.4-3.5 3.6V11H8v3h2.5v6H14v-6h2.3l.4-3H14V8.9c0-.5.2-.4.6-.4z" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-    </main>
-
-
-    <footer class="footer">
-        <div class="footer__inner">
-            <span class="footer__logo">MORVIZY</span>
-            <p class="footer__legal">
-                © <span id="year"></span> MORVIZY. All rights reserved.<br />
-                Owned and Operated by Rixogen Industries Private Limited.
-            </p>
         </div>
     </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-header">
+                <h2>Welcome Back</h2>
+                <p>Log in to your MORVIZY account</p>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn-submit">Log In</button>
+                <p class="modal-footer-text">
+                    Don't have an account? <a href="#" class="switch-modal" data-target="signupModal">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-header">
+                <h2>Create Account</h2>
+                <p>Join MORVIZY for exclusive access</p>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" required>
+                        <span>I agree to the Terms & Privacy Policy</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn-submit">Create Account</button>
+                <p class="modal-footer-text">
+                    Already have an account? <a href="#" class="switch-modal" data-target="loginModal">Log In</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scroll to Top & WhatsApp Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button" aria-label="Contact on WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                    fill="currentColor" />
+            </svg>
+        </a>
+        <button class="scroll-top-button" aria-label="Scroll to top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
 
     <script src="script.js"></script>
 </body>
